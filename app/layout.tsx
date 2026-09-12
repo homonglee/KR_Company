@@ -5,9 +5,10 @@ const title = "KR컴퍼니 | 나광열 — 사람의 이야기를 콘텐츠로";
 const description =
   "사진과 미디어를 기반으로 브랜드·지역·사람의 이야기를 연결하는 KR컴퍼니입니다.";
 const vercelHost =
+  process.env.NEXT_PUBLIC_SITE_URL ??
   process.env.VERCEL_PROJECT_PRODUCTION_URL ??
   process.env.VERCEL_URL ??
-  "kr-company.vercel.app";
+  "krcompany-git-main-homongs-projects.vercel.app";
 const siteUrl = vercelHost.startsWith("http")
   ? vercelHost
   : `https://${vercelHost}`;
@@ -55,22 +56,10 @@ export const metadata: Metadata = {
       { url: "/favicon-64.png", sizes: "64x64", type: "image/png" },
     ],
     shortcut: "/favicon.ico",
-    apple: [
-      {
-        url: "/apple-touch-icon.png",
-        sizes: "180x180",
-        type: "image/png",
-      },
-    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{ children: React.ReactNode }>) {
-  return (
-    <html lang="ko">
-      <body>{children}</body>
-    </html>
-  );
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  return <html lang="ko"><body>{children}</body></html>;
 }

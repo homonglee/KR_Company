@@ -3,9 +3,9 @@
 import { useEffect, useState } from "react";
 
 const work = [
-  { tag: "LIVE · CONTENT", title: "현장에서 완성하는\n라이브 콘텐츠", src: "/images/portfolio-01.png", alt: "라이브커머스와 방송 콘텐츠 제작 현장 모음" },
-  { tag: "EDUCATION", title: "경험을 나누는\n크리에이터 교육", src: "/images/portfolio-02.png", alt: "나광열 대표의 콘텐츠 제작 교육 현장" },
-  { tag: "TALK · LECTURE", title: "사람과 만나는\n강연과 대화", src: "/images/portfolio-03.png", alt: "별마당도서관 강연 현장" },
+  { tag: "LIVE · CONTENT", title: "현장에서 완성하는\n라이브 콘텐츠", src: "/images/portfolio-01.jpg", alt: "라이브커머스와 방송 콘텐츠 제작 현장 모음" },
+  { tag: "EDUCATION", title: "경험을 나누는\n크리에이터 교육", src: "/images/portfolio-02.jpg", alt: "나광열 대표의 콘텐츠 제작 교육 현장" },
+  { tag: "TALK · LECTURE", title: "사람과 만나는\n강연과 대화", src: "/images/portfolio-03.jpg", alt: "별마당도서관 강연 현장" },
   { tag: "LOCAL CULTURE", title: "지역의 시간을\n오늘의 이야기로", src: "/images/history-lecture.jpg", alt: "역사 커뮤니케이터와 함께한 별마당도서관 강연" },
 ];
 const services = [
